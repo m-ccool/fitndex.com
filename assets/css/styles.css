@@ -1,0 +1,443 @@
+/* GLOBAL FORMATTING */
+
+I {
+  text-shadow: 0px 0px 7px rgb(0,0,0);
+  color: #ffffff;
+  height: 2rem;
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+}
+
+body {
+  font-size: 15px!important;
+  font-family: ABeeZee, sans-serif;
+  font-family: ABeeZee, sans-serif;
+  color: var(--black);
+  --theme1: #f7f7f7;
+  --theme2: #d2d2d2;
+  background-color: var(--theme1);
+}
+
+footer {
+  padding-top: calc(1rem + .5vw);
+  box-shadow: 0px -10px 15px rgba(33,37,41,0.25);
+  color: var(--black);
+  background-color: rgba(9,10,10,0.9);
+  backdrop-filter: blur(5px);
+}
+
+footer, a {
+  color: rgba(255,255,255,0.5);
+  font-weight: 400;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.h1, h1 {
+  font-size: calc(2.375rem + 1.5vw);
+}
+
+.rainbow-gradient {
+  background: linear-gradient(-45deg, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
+  transition: gradient 500ms ease-in-out, margin 500ms ease-out;
+  -webkit-text-size-adjust: 100%;
+  animation: gradient 5s ease infinite;
+}
+
+.rainbow-gradient {
+  background: linear-gradient(-45deg, rgba(255,110,235,0.75) 0%, rgba(255,157,108,0.5) 20%, rgba(121,255,110,0.5) 40%, rgba(110,255,255,0.5) 60%, rgba(208,157,242,0.5) 80%, rgba(255,110,235,0.5) 100%);
+  transition: gradient 500ms ease-in-out, margin 500ms ease-out;
+  -webkit-text-size-adjust: 100%;
+  animation: gradient 5s ease infinite;
+}
+
+/* NAVBAR */
+
+.navbar-light .navbar-toggler {
+  color: rgba(255,255,255,0.55);
+  border-color: rgba(255,255,255,0);
+  box-shadow: none!important;
+}
+
+.navbar-toggler:focus {
+  color: rgba(255,255,255,0);
+  text-decoration: none;
+  outline: 0;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.nav-item {
+  margin: 0 calc(2rem + .5vw);
+  /*color: white;*/
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.55);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+  color: rgba(255,255,255,0.9);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../../assets/img/menu-icon-white.svg");
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navbar {
+  box-shadow: 0px 0px 12px rgba(33,37,41,0.5);
+  color: white!important;
+  text-shadow: 0px 0px 7px rgba(0,0,0,0.75);
+  padding: 0;
+  background-color: rgba(9,10,10,0.9);
+  backdrop-filter: blur(5px);
+  border-radius: 0 0 1rem;
+}
+
+/* SPLASH MAIN */
+
+.playstore-button {
+  /*padding: -.5rem;*/
+  /*border-radius: .34rem;*/
+  margin: 0rem;
+  height: calc(2.5rem + .75vw);
+  /*margin: 2rem calc(.5rem + .75vw);*/
+}
+
+.button-frame {
+  margin: 2rem;
+  border-radius: .5rem;
+  padding: 2px;
+}
+
+.storeFrame {
+  box-shadow: 0px 0px 12px rgba(33,37,41,0.25);
+  margin: 2rem;
+  border-radius: .5rem;
+  padding: 1px;
+}
+
+@media (max-width:991px) {
+  .appcardCol {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    z-index: -5!important;
+    user-select: none!important;
+  }
+}
+
+@media (max-width:991px) {
+  .appcardCol {
+    user-select: none!important;
+    margin-left: 2.5rem;
+    margin-top: -10rem!important;
+    transform: scale(.553)!important;
+  }
+}
+
+@media (min-width:992px) {
+  .appcardCol {
+    margin-top: 5rem;
+  }
+}
+
+.appcardCol {
+  transform: scale(.9);
+  transition: all 500ms ease;
+  overflow: visible;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.storeBtn {
+  transition: all 750ms ease;
+  border-radius: .34rem;
+  padding: 0rem!important;
+  margin: 1rem 1rem!important;
+}
+
+/* CARD FORMATTING */
+
+:root {
+  --card1: #e1e1e1;
+  --card2: #d2d2d2;
+  --charizardfront: url(../../assets/img/app_screen_home.png);
+  --mewtwofront: url(../../assets/img/app_screen_log.png);
+}
+
+.pcards.pcard-1 {
+  z-index: 5;
+}
+
+@media screen and (min-width: 768px) {
+  .pcard-xl {
+    transition: all 500ms ease-out;
+    width: 71.5vw;
+    max-width: 357.5px;
+    height: 100vw;
+    max-height: 500px;
+  }
+}
+
+.pcard.charizard {
+  --color1: var(--charizard1);
+  --color2: var(--charizard2);
+  --front: var(--charizardfront);
+}
+
+.pcard.mewtwo {
+  --color1: var(--mewtwo1);
+  --color2: var(--mewtwo2);
+  --front: var(--mewtwofront);
+}
+
+.pcard.active:after, .pcard:hover:after {
+  filter: brightness(.25) contrast(.25);
+  opacity: 1;
+}
+
+.pcard.active, .pcard:hover {
+  -webkit-animation: none;
+  animation: none;
+  transition: box-shadow 0.1s ease-out;
+}
+
+.pcard.active:before, .pcard:hover:before {
+  -webkit-animation: none;
+  animation: none;
+  background-image: linear-gradient(110deg, transparent 25%, var(--color1) 48%, var(--color2) 52%, transparent 75%);
+  background-position: 50% 50%;
+  background-size: 250% 250%;
+  opacity: 0.88;
+  filter: brightness(0.66) contrast(1.33);
+  transition: none;
+}
+
+.pcard.active:before, .pcard:hover:before, .pcard.active:after, .pcard:hover:after {
+  -webkit-animation: none;
+  animation: none;
+  transition: none;
+}
+
+.pcard.animated {
+  transition: none;
+  -webkit-animation: holopcard 12s ease 0s 1;
+  animation: holopcard 12s ease 0s 1;
+}
+
+.pcard.animated:before {
+  transition: none;
+  -webkit-animation: holoGradient 12s ease 0s 1;
+  animation: holoGradient 12s ease 0s 1;
+}
+
+.pcard.animated:after {
+  transition: none;
+  -webkit-animation: holoSparkle 12s ease 0s 1;
+  animation: holoSparkle 12s ease 0s 1;
+}
+
+.pdemo, .pcards {
+  display: flex!important;
+  flex-direction: column!important;
+  align-items: center;
+  justify-content: space-evenly;
+  perspective: 2000px;
+  position: relative;
+  z-index: 1;
+  transform: translate3d(0.1px, 0.1px, 0.1px);
+}
+
+@media screen and (min-width: 678px) {
+  .pcards {
+    flex-direction: row;
+  }
+}
+
+.pcards.pcard-2 {
+  opacity: .75;
+  margin-top: calc(-5em + -0vw);
+  margin-left: calc(-12em + 5vw);
+}
+
+.pcards.pcard-1 {
+  z-index: 5;
+}
+
+.pcard {
+  max-width: 375px;
+  width: 375px;
+  max-height: 785px;
+  height: 785px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  overflow: hidden;
+  z-index: 10;
+  touch-action: none;
+  border-radius: .75REM;
+  box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2), -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent, 0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  will-change: transform, filter;
+  background-color: #040712;
+  background-image: var(--front);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform-origin: center;
+}
+
+.pcard:hover {
+  box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+}
+
+.pcard.charizard {
+  --color1: var(--card1);
+  --color2: var(--card1);
+}
+
+.pcard.mewtwo {
+  --color1: var(--theme1);
+  --color2: var(--theme1);
+  --front: var(--mewtwofront);
+}
+
+.pcard:before, .pcard:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  mix-blend-mode: color-dodge;
+  transition: all 0.33s ease;
+}
+
+.pcard:after {
+  opacity: 1;
+  background-position: 50% 50%;
+  background-size: 160%;
+  background-blend-mode: overlay;
+  z-index: 2;
+  filter: brightness(.5) contrast(.5);
+  transition: all 0.33s ease;
+  mix-blend-mode: color-dodge;
+  opacity: 0.75;
+}
+
+.pcard.active:after, .pcard:hover:after {
+  filter: brightness(1) contrast(1);
+  opacity: 1;
+}
+
+.pcard.active, .pcard:hover {
+  -webkit-animation: none;
+  animation: none;
+  transition: box-shadow 0.1s ease-out;
+}
+
+.pcard.active:before, .pcard:hover:before {
+  -webkit-animation: none;
+  animation: none;
+  background-image: linear-gradient(110deg, transparent 25%, var(--color1) 48%, var(--color2) 52%, transparent 75%);
+  background-position: 50% 50%;
+  background-size: 250% 250%;
+  opacity: 0.88;
+  filter: brightness(0.2) contrast(.5);
+  transition: none;
+}
+
+.pcard.active:before, .pcard:hover:before, .pcard.active:after, .pcard:hover:after {
+  -webkit-animation: none;
+  animation: none;
+  transition: none;
+}
+
+.pcard.animated {
+  transition: none;
+  -webkit-animation: holopcard 12s ease 0s 1;
+  animation: holopcard 12s ease 0s 1;
+}
+
+.pcard.animated:before {
+  transition: none;
+  -webkit-animation: holoGradient 12s ease 0s 1;
+  animation: holoGradient 12s ease 0s 1;
+}
+
+.pcard.animated:after {
+  transition: none;
+  -webkit-animation: holoSparkle 12s ease 0s 1;
+  animation: holoSparkle 12s ease 0s 1;
+}
+
+.pdemo, .pcards {
+  display: flex!important;
+  flex-direction: column!important;
+  align-items: center;
+  justify-content: space-evenly;
+  perspective: 2000px;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 678px) {
+  .pcards {
+    flex-direction: row;
+  }
+}
+
+.storeBtn:hover {
+  transition: all 750ms ease;
+  transform: scale(1.25);
+  /*box-shadow: 0px 0px 12px rgba(33,37,41,0.25);*/
+}
+
+.storeBtn:visited {
+  transition: all 750ms ease;
+  transform: scale(1.25);
+  /*box-shadow: 0px 0px 12px rgba(33,37,41,0.25);*/
+}
+
+.storeBtn:active {
+  transition: all 750ms ease;
+  transform: scale(1.25);
+  /*box-shadow: 0px 0px 12px rgba(33,37,41,0.25);*/
+}
+
+.storeBtn:focus {
+  transition: all 750ms ease;
+  transform: scale(1.25);
+  /*box-shadow: 0px 0px 12px rgba(33,37,41,0.25);*/
+}
+

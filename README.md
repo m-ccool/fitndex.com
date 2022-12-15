@@ -11,6 +11,11 @@ Mobile-first Progressive Web Application for FITNDEX Mobile Application Document
 - [Test-Instructions](#test)
 - [Licenses](#license)
 - [Contact-Information](#email)
+
+## TODO
+CTRL + F "PLAYSTORE BUTTON" AND "APPLESTORE BUTTON" TO FIND THE URLS TO REPLACE, "placeholderPlaystore" AND "placeholderPlaystore"
+
+Update the `href="placeholderPlaystore"` to `href="new_link_here"`
 ## Description
 
 ## Installation

@@ -14,7 +14,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
+<!--CTRL + F "PLAYSTORE BUTTON" AND "APPLESTORE BUTTON" TO FIND THE URLS TO REPLACE, "placeholderPlaystore" AND "placeholderPlaystore"-->
+
 <body class="scrollbar-hidden" style="overflow-x: hidden;font-size: 13px;">
+
+    <!--NAVBAR-->
     <nav class="navbar navbar-light navbar-expand-md fixed-top d-flex justify-content-center align-items-center">
         <div class="container-fluid"><a class="navbar-brand d-flex justify-content-center align-items-center h3" href="index.html/#storeframe" style="color: white;margin: 0;"><img src="assets/img/app-icon-x.svg" style="margin: .05REM calc(.5REM + .25vw);padding: .5rem;/*border-radius: 100REM;*/width: 1.75REM;box-shadow: 0px 0px 7px rgba(33,37,41,0.3);"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse text-center d-md-flex justify-content-md-center" id="navcol-1" style="/*color: white;*/">
@@ -26,14 +30,29 @@
             </div>
         </div>
     </nav>
+
     <main style="/*height: 100vh;*/"><span id="hidden-text">Text</span>
         <section id="splash">
             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 d-xl-flex justify-content-center">
-                <div class="col-auto text-center d-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center align-items-lg-center" data-aos="zoom-out" data-aos-duration="900" id="titleCol" style="padding-top: 2.5REM;z-index: 999;margin-bottom: 0;padding-bottom: 0;/*width: 30%;*/"><img src="assets/img/brand_name_dark.svg" style="height: calc(2.375rem + 2.75vw);margin-top: 2.5rem;margin-bottom: 1REM;/*opacity: 0.75;*/">
+                <div class="col-auto text-center d-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center align-items-lg-center" data-aos="zoom-out" data-aos-duration="900" id="titleCol" style="padding-top: 2.5REM;z-index: 999;margin-bottom: 0;padding-bottom: 0;/*width: 30%;*/">
+                    <img src="assets/img/brand_name_dark.svg" style="height: calc(2.375rem + 2.75vw);margin-top: 2.5rem;margin-bottom: 1REM;/*opacity: 0.75;*/">
                     <h6 class="text-nowrap" style="line-height: 1.5;opacity: .5;">MOBILE APPLICATION</h6>
                     <h4 class="text-nowrap" style="line-height: 1.5;font-family: ABeeZee, sans-serif;">See it. Feel it. Know it.</h4>
-                    <div id="storeFrame" class="storeFrame rainbow-gradien">
-                        <div class="d-flex flex-column justify-content-center px-5 py-3" style="border-radius: .45rem;/*padding: 2.5rem 3rem;*/background-color: var(--bs-body-bg);"><a class="btn storeBtn" role="button" id="AppleStoreBtn" href="placeholderApplestore" target="_blank"><img class="playstore-button" src="assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"></a><a class="btn storeBtn" role="button" id="GooglePlayBtn" href="placeholderPlaystore" target="_blank"><img class="playstore-button" src="assets/img/google-play-badge.svg"></a></div>
+
+                    <div id="storeFrame" class="storeFrame">
+                        <div class="d-flex flex-column justify-content-center px-5 py-3" style="border-radius: .45rem;/*padding: 2.5rem 3rem;*/background-color: var(--bs-body-bg);">
+
+                            <!--APPLESTORE BUTTON-->
+                            <a class="btn storeBtn" role="button" id="AppleStoreBtn" href="placeholderApplestore" target="_blank">
+                                <img class="playstore-button" src="assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">
+                            </a>
+
+                            <!--PLAYSTORE BUTTON-->
+                            <a class="btn storeBtn" role="button" id="GooglePlayBtn" href="placeholderPlaystore" target="_blank">
+                                <img class="playstore-button" src="assets/img/google-play-badge.svg">
+                            </a>
+
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center align-items-center align-items-md-center justify-content-lg-start appcardCol" id="appcardCol">
@@ -51,20 +70,46 @@
         <section class="d-flex flex-column justify-content-center align-items-center align-content-center" id="what-is"></section>
         <section class="d-flex flex-column justify-content-center align-items-center align-content-center" id="demo"></section>
     </main>
+
     <hr class="rainbow-gradient" style="margin: 0!important;height: 2px;">
-    <footer style="/*font-family: ABeeZee, sans-serif;*//*box-shadow: 0px 37px;*/">
+
+    <footer>
         <div class="row row-cols-1 text-center">
             <div class="col d-flex flex-column"><span>© FITNDEX LLC 2022</span><span>USA</span></div>
             <div class="col mb-3">
-                <div class="d-flex justify-content-center" id="storeiconsBtn"><a class="btn" role="button" href="placeholderPlaystore" target="_blank"><i class="fab fa-google-play"></i></a><a class="btn" role="button" href="placeholderApplestore" target="_blank"><i class="fab fa-apple"></i></a></div>
+                <div class="d-flex justify-content-center" id="storeiconsBtn">
+
+                    <!--PLAYSTORE BUTTON-->
+                    <a class="btn" role="button" 
+                    
+                    href="placeholderPlaystore" 
+                    
+                    target="_blank">
+                        <i class="fab fa-google-play"></i>
+                    </a>
+
+                    <!--APPLESTORE BUTTON-->
+                    <a class="btn" role="button" 
+                    
+                    href="placeholderApplestore" 
+                    
+                    target="_blank">
+                        <i class="fab fa-apple"></i>
+                    </a>
+
+                    
+                </div>
             </div>
         </div>
     </footer>
+
+    <!--SCRIPTS-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/pkmn-card.js"></script>
+
 </body>
 
 </html>

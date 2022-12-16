@@ -36,6 +36,7 @@ Visit **[ fitndex.com ](https://fitndex.com)**
 ## License
 ## Authors
 **[🤖 app dev / software engineering @stevenS on github ](https://github.com/)**
+
 **[🐉 web / ux design @mc-cool on github ](https://github.com/m-ccool)**
 
 

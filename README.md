@@ -34,7 +34,8 @@ Fix: Delete all website documents (currently: index.html, support.html, sitemap.
 Visit **[ fitndex.com ](https://fitndex.com)**
 
 ## License
-## Author
-**[🐉 @mc-cool on github ⭐](https://github.com/m-ccool)**
+## Authors
+**[🤖 app dev / software engineering @stevenS on github ](https://github.com/)**
+**[🐉 web / ux design @mc-cool on github ](https://github.com/m-ccool)**
 
 

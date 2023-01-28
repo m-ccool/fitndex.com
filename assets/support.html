@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<!--CTRL + F "PLAYSTORE BUTTON" AND "APPLESTORE BUTTON" TO FIND THE URLS TO REPLACE, "placeholderPlaystore" AND "placeholderPlaystore"-->
+<!--CTRL + F "PLAYSTORE BUTTON" AND "APPLESTORE BUTTON" TO FIND THE URLS TO REPLACE, (URLS=) "placeholderPlaystore" AND "placeholderPlaystore"-->
 
 <body class="scrollbar-hidden">
 
@@ -36,53 +36,31 @@
         </div>
     </nav>
 
-    <main>
-        <span id="hidden-text">Text</span>
-        <section id="splash">
-            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 d-xl-flex justify-content-center">
-                <div class="col-auto text-center d-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center align-items-lg-center" data-aos="zoom-out" data-aos-duration="900" id="titleCol">
-                    <img id="brand__splash" alt="fitndex company branding "src="assets/img/brand_name_dark.svg">
-                    <h4 id="h__mobileapp" class="text-nowrap">MOBILE APPLICATION</h4>
-                    <h3 id="h__slogan">See it. Feel it. Know it.</h3>
+    <main class="d-flex justify-content-center scrollbar-hidden">
 
-                    <div id="storeFrame" class="storeFrame">
-                        <div id="storeFrame__content" class="d-flex flex-column justify-content-center px-5 py-3">
+        <section id="section__support" class="d-flex d-md-flex flex-column justify-content-center align-items-center" data-aos="zoom-out" data-aos-duration="900">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img alt="fitndex brand" id="brand__splash--medium" src="assets/img/brand_name_dark.svg">
+                <h4 id="h__mobileapp" class="text-nowrap">MOBILE APPLICATION</h4>
+                <h4 class="text-nowrap mt-5">CONTACT SUPPORT</h4>
+                <h6 id="span__support" class="text-center mx-3">Questions about the app? <br>
+                    Contact the developer at the address below.</h6>
 
-                            <h3 id="h__comingsoon">coming soon</h3>
-
-                        <!-- APPLESTORE / PLAYSTORE BUTTONS -->
-                        <!--
-                            <a class="btn storeBtn" role="button" id="AppleStoreBtn" href="placeholderApplestore" target="_blank">
-                                <img class="playstore-button" src="assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg">
-                            </a>
-
-                            
-                            <a class="btn storeBtn" role="button" id="GooglePlayBtn" href="placeholderPlaystore" target="_blank">
-                                <img class="playstore-button" src="assets/img/google-play-badge.svg">
-                            </a>
-                        -->
-
-                        </div>
-                    </div>
-                </div>
-                <div id="container__cards" class="col-md-6 d-flex justify-content-center align-items-center align-items-md-center justify-content-lg-start appcardCol" id="appcardCol">
-                    <div class="d-flex justify-content-center justify-content-sm-center cards-div-xl">
-                        <div class="pcards pcard-1">
-                            <div class="pcard pcard-xl charizard animated pcard:nth-child(1)"></div>
-                        </div>
-                        <div id="pcard-2" class="pcards pcard-2">
-                            <div class="pcard pcard-xl mewtwo animated pcard:nth-child(1)"></div>
-                        </div>
-                    </div>
+                <!--SUPPORT EMAIL BOX-->
+                <div class="button-frame">
+                    <button id="btn__support" class="btn text-nowrap d-flex align-items-center align-items-lg-center" type="button">
+                        <span id="span__support-email" class="text-nowrap h5">SUPPORT @ FITNDEX . COM<br></span>
+                    </button>
                 </div>
             </div>
+
         </section>
+
         <section class="d-flex flex-column justify-content-center align-items-center align-content-center" id="what-is"></section>
+
         <section class="d-flex flex-column justify-content-center align-items-center align-content-center" id="demo"></section>
+
     </main>
-
-    
-
 
     
     <footer>

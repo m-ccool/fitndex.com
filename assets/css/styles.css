@@ -16,10 +16,16 @@ body {
   --theme1: #f7f7f7;
   --theme2: #d2d2d2;
   background-color: var(--theme1);
+  overflow-x: hidden;
+  margin-bottom: 60px;
 }
 
-footer {
-  padding-top: calc(1rem + .5vw);
+footer {  
+  z-index: 100!IMPORTANT;
+  padding: 1REM;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   box-shadow: 0px -10px 15px rgba(33,37,41,0.25);
   color: var(--black);
   background-color: rgba(9,10,10,0.9);
@@ -29,6 +35,19 @@ footer {
 footer, a {
   color: rgba(255,255,255,0.5);
   font-weight: 400;
+}
+
+.app-icon-x {
+  margin: .05REM calc(.5REM + .25vw);
+  padding: .5rem;
+  width: 1.75REM;
+  box-shadow: 0px 0px 7px rgba(33,37,41,0.3);
+}
+
+.brandname_dark {
+  height: calc(2.375rem + 2.75vw);
+  margin-top: 2.5rem;
+  margin-bottom: 1REM;
 }
 
 .scrollbar-hidden {
@@ -45,20 +64,40 @@ footer, a {
 }
 
 .rainbow-gradient {
-  background: linear-gradient(-45deg, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
+  background: linear-gradient(-45deg, #ff2ce3 0%, #ff7e3e 20%, #5eff50 40%, #3bffff 60%, #bc56ff 80%, #ff43e6 100%);
   transition: gradient 500ms ease-in-out, margin 500ms ease-out;
   -webkit-text-size-adjust: 100%;
   animation: gradient 5s ease infinite;
 }
 
-.rainbow-gradient {
-  background: linear-gradient(-45deg, rgba(255,110,235,0.75) 0%, rgba(255,157,108,0.5) 20%, rgba(121,255,110,0.5) 40%, rgba(110,255,255,0.5) 60%, rgba(208,157,242,0.5) 80%, rgba(255,110,235,0.5) 100%);
-  transition: gradient 500ms ease-in-out, margin 500ms ease-out;
-  -webkit-text-size-adjust: 100%;
-  animation: gradient 5s ease infinite;
+#border__rainbow {
+  width: 120%;
+  margin-left: -25PX;
+  z-index: -99!IMPORTANT;
+  opacity: 1!IMPORTANT;
+  height: 1px;
 }
 
 /* NAVBAR */
+
+#icon__navbarx {
+  margin: .05REM calc(.5REM + .25vw);
+  padding: .5rem;
+  width: 1.75REM;
+  box-shadow: 0px 0px 7px rgba(33,37,41,0.3);
+}
+
+.navbar-brand {
+  color: white;
+  margin: 0;
+}
+
+.icon-x {
+  margin: .05REM calc(.5REM + .25vw);
+  padding: .5rem;
+  width: 1.75REM;
+  box-shadow: 0px 0px 7px rgba(33,37,41,0.3);
+}
 
 .navbar-light .navbar-toggler {
   color: rgba(255,255,255,0.55);
@@ -109,6 +148,11 @@ footer, a {
   align-items: center;
 }
 
+.navbar-brand {
+  color: white;
+  margin: 0;
+}
+
 .navbar {
   box-shadow: 0px 0px 12px rgba(33,37,41,0.5);
   color: white!important;
@@ -121,12 +165,61 @@ footer, a {
 
 /* SPLASH MAIN */
 
+#brand__splash {
+  height: calc(2.375rem + 2.75vw);
+  margin-top: 2.5rem;
+  margin-bottom: 1REM;
+}
+
+#h__mobileapp {
+  padding-top: 1rem;
+  line-height: 1.5;
+  opacity: .5;
+}
+
+#h__slogan {
+  line-height: 2;
+  font-family: ABeeZee, sans-serif;
+}
+
+#h__comingsoon {
+  opacity: .5;
+  line-height: 2;
+  font-family: ABeeZee, sans-serif;
+}
+
+#splashFrame {
+  z-index: 999;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pcards {
+  overflow: visible;
+  transform-origin: left;
+}
+
+#pcard-2 {
+  transform: scALE(.85)!important;
+}
+
+#storeFrame {
+  border-radius: .45rem;
+  background-color: var(--bs-body-bg);
+}
+
+#storeFrame__content {
+  border-radius: .45rem;background-color: var(--bs-body-bg);
+}
+
+.h_mobileapp {
+  line-height: 1.5;
+  font-family: ABeeZee, sans-serif;
+}
+
 .playstore-button {
-  /*padding: -.5rem;*/
-  /*border-radius: .34rem;*/
   margin: 0rem;
   height: calc(2.5rem + .75vw);
-  /*margin: 2rem calc(.5rem + .75vw);*/
 }
 
 .button-frame {
@@ -182,6 +275,37 @@ footer, a {
   border-radius: .34rem;
   padding: 0rem!important;
   margin: 1rem 1rem!important;
+}
+
+/* SUPPORT PAGE */
+
+#section__support {
+  margin-top: calc(7.5rem + 2vw);
+}
+
+
+#btn__support {
+  box-shadow: 0px 10px 7px rgba(33,37,41,0.15);
+  padding: 40px 50px;
+  border-radius: .45rem;max-height: 15px;
+  background-color: #ffffff;
+}
+
+#brand__splash--medium {
+  height: calc(2.375rem + 2.75vw);
+  margin-top: 2.5rem;
+  margin-bottom: 1REM;
+}
+
+#span__support {
+  margin: 3rem!important;
+  color: black;
+}
+
+
+#btn-email {
+  box-shadow: 0px 10px 7px rgba(33,37,41,0.15);
+  padding: 40px 50px;border-radius: .45rem;max-height: 15px;background-color: #ffffff;
 }
 
 /* CARD FORMATTING */
@@ -440,4 +564,6 @@ footer, a {
   transform: scale(1.25);
   /*box-shadow: 0px 0px 12px rgba(33,37,41,0.25);*/
 }
+
+
 

@@ -1,5 +1,5 @@
 # FITNDEX (PWA) WEBSITE
-Current Version: v3.5
+Current Version: v3.6
 
 Mobile-first Progressive Web Application for FITNDEX Mobile Application - Documentation and Forms
 
